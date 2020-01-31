@@ -1,11 +1,11 @@
 package Syntax::Kamelon::Indexer;
+use Alt::Syntax::Kamelon::RT129134;
 
 use 5.006;
 use strict;
 use warnings;
 use Syntax::Kamelon::XMLData;
 
-my $VERSION = '0.16';
 
 
 sub new {

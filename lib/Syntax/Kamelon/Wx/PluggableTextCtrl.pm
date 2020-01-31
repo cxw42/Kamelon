@@ -1,11 +1,11 @@
 package Syntax::Kamelon::Wx::PluggableTextCtrl;
+use Alt::Syntax::Kamelon::RT129134;
 
 use strict;
 use warnings;
 use Carp;
 
 use vars qw($VERSION);
-$VERSION="0.01";
 
 use Wx qw( :textctrl :font :colour );
 use Wx::DND;

@@ -1,4 +1,5 @@
 package Syntax::Kamelon::Debugger;
+use Alt::Syntax::Kamelon::RT129134;
 
 use 5.006;
 use strict;
@@ -6,7 +7,6 @@ use warnings;
 use Time::HiRes qw(time);
 use base qw(Syntax::Kamelon);
 
-my $VERSION = '0.15';
 
 my %functions = (
 	step => [\&StepPre, \&StepPost],

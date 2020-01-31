@@ -34,3 +34,5 @@ Kamelon/pm_to_blib
 # Generated dist tarballs
 /Syntax-Kamelon*.tar.gz
 /Syntax-Kamelon*.tgz
+/Alt-Syntax-Kamelon*.tar.gz
+/Alt-Syntax-Kamelon*.tgz

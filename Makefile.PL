@@ -9,12 +9,16 @@ If you want to use these scripts, please install it.
 
 __EOF
 
-my $pmfile = 'Kamelon/lib/Syntax/Kamelon.pm';
+my $alt = $ENV{PERL_ALT_INSTALL} || '';
+
+my $pmfile = #'Kamelon/lib/Syntax/Kamelon.pm';
+    'lib/Alt/Syntax/Kamelon/RT129134.pm';
 
 use ExtUtils::MakeMaker;
 WriteMakefile(
-   NAME              => 'Syntax::Kamelon',
-   VERSION_FROM      => $pmfile, # finds $VERSION, requires EU::MM from perl >= 5.5
+   DESTDIR           => ($alt ? $alt eq 'OVERWRITE' ? '' : $alt : 'no-install-alt'),
+   NAME              => 'Alt::Syntax::Kamelon::RT129134',
+   VERSION           => '0.000001',     # Shouldn't satisfy any dependencies
    LICENSE           => 'gpl_3',
    PREREQ_PM         => {
       'Data::Dumper' => 0,
@@ -34,7 +38,13 @@ WriteMakefile(
 		 url  => 'git://github.com/haje61/Kamelon.git',
                  web  => 'https://github.com/haje61/Kamelon',
               },
-          }})
+          },
+          no_index => {
+              directory => [ qw(bin tools lib/Syntax Kamelon) ],
+              namespace => [ qw(Syntax::Kamelon) ],
+          },
+          release_status => 'testing',
+      })
       : ()
     ),
 );

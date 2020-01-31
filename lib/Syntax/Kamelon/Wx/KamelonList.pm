@@ -1,11 +1,11 @@
 package Syntax::Kamelon::Wx::KamelonList;
+use Alt::Syntax::Kamelon::RT129134;
 
 use strict;
 use warnings;
 use Carp;
 
 use vars qw($VERSION);
-$VERSION="0.01";
 
 use Wx qw(:sizer :panel :window :id :listbox :dialog :filedialog wxDefaultPosition);
 use base qw( Wx::Panel );

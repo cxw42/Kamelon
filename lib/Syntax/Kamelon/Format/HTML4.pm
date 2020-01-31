@@ -1,4 +1,5 @@
 package Syntax::Kamelon::Format::HTML4;
+use Alt::Syntax::Kamelon::RT129134;
 
 use 5.006;
 use strict;
@@ -6,7 +7,6 @@ use warnings;
 use Carp;
 
 use vars qw($VERSION);
-$VERSION="0.15";
 
 use base qw(Syntax::Kamelon::Format::Base);
 

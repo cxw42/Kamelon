@@ -1,9 +1,3 @@
-Makefile.PL
-Changes
-LICENSE
-MANIFEST			This list of files
-README.md
-regenerate
 bin/kamelon
 bin/kamelon_analyze
 bin/kamelon_bench
@@ -14,6 +8,7 @@ bin/kamelon_stepper
 bin/kamelon_xml_updater
 bin/kamelon_xml_viewer
 bin/kamelonwxconsole
+Changes
 Kamelon/const-c.inc
 Kamelon/const-xs.inc
 Kamelon/fallback/const-c.inc
@@ -25,6 +20,8 @@ Kamelon/lib/Syntax/Kamelon.pm
 Kamelon/Makefile.PL
 Kamelon/ppport.h
 Kamelon/t/Kamelon.t
+lib/Alt/Syntax/Kamelon/RT129134.pm
+lib/Syntax/Kamelon.pod
 lib/Syntax/Kamelon/Builder.pm
 lib/Syntax/Kamelon/Builder.pod
 lib/Syntax/Kamelon/Debugger.pm
@@ -35,24 +32,24 @@ lib/Syntax/Kamelon/Format/ANSI.pm
 lib/Syntax/Kamelon/Format/ANSI.pod
 lib/Syntax/Kamelon/Format/Base.pm
 lib/Syntax/Kamelon/Format/Base.pod
+lib/Syntax/Kamelon/Format/HTML4.pm
+lib/Syntax/Kamelon/Format/HTML4.pod
 lib/Syntax/Kamelon/Format/HTML4/Black.css
 lib/Syntax/Kamelon/Format/HTML4/DarkGray.css
 lib/Syntax/Kamelon/Format/HTML4/Gray.css
 lib/Syntax/Kamelon/Format/HTML4/layout.css
 lib/Syntax/Kamelon/Format/HTML4/LightGray.css
 lib/Syntax/Kamelon/Format/HTML4/White.css
-lib/Syntax/Kamelon/Format/HTML4.pm
-lib/Syntax/Kamelon/Format/HTML4.pod
 lib/Syntax/Kamelon/Indexer.pm
 lib/Syntax/Kamelon/Indexer.pod
 lib/Syntax/Kamelon/Syntaxes.pod
 lib/Syntax/Kamelon/Wx/KamelonList.pm
 lib/Syntax/Kamelon/Wx/LogTextCtrl.pm
+lib/Syntax/Kamelon/Wx/PluggableTextCtrl.pm
 lib/Syntax/Kamelon/Wx/PluggableTextCtrl/BasePlugin.pm
 lib/Syntax/Kamelon/Wx/PluggableTextCtrl/Highlighter.pm
 lib/Syntax/Kamelon/Wx/PluggableTextCtrl/KeyEchoes.pm
 lib/Syntax/Kamelon/Wx/PluggableTextCtrl/UndoRedo.pm
-lib/Syntax/Kamelon/Wx/PluggableTextCtrl.pm
 lib/Syntax/Kamelon/XML/4dos.xml
 lib/Syntax/Kamelon/XML/abap.xml
 lib/Syntax/Kamelon/XML/abc.xml
@@ -344,7 +341,12 @@ lib/Syntax/Kamelon/XML/zonnon.xml
 lib/Syntax/Kamelon/XML/zsh.xml
 lib/Syntax/Kamelon/XMLData.pm
 lib/Syntax/Kamelon/XMLData.pod
-lib/Syntax/Kamelon.pod
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+README.md
+regenerate
 t/00-KamTest.t
 t/01-Kamelon.t
 t/02-XMLData.t

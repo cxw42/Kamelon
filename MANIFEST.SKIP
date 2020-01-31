@@ -12,6 +12,8 @@ t/.*\.out$
 # Generated dist tarballs
 ^Syntax-Kamelon.*\.tar\.gz$
 ^Syntax-Kamelon.*\.tgz$
+^Alt-Syntax-Kamelon.*\.tar\.gz$
+^Alt-Syntax-Kamelon.*\.tgz$
 
 # t/.gitignore
 ^t\/.*\/CLEANUP$

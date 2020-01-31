@@ -1,11 +1,11 @@
 package Syntax::Kamelon::Wx::PluggableTextCtrl::BasePlugin;
+use Alt::Syntax::Kamelon::RT129134;
 
 use strict;
 use warnings;
 use Carp;
 
 use vars qw($VERSION);
-$VERSION="0.01";
 
 my $debug = 0;
 

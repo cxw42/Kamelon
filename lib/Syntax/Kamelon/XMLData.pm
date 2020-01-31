@@ -1,4 +1,5 @@
 package Syntax::Kamelon::XMLData;
+use Alt::Syntax::Kamelon::RT129134;
 
 use 5.006;
 use strict;
@@ -6,7 +7,6 @@ use warnings;
 use XML::TokeParser;
 use Data::Dumper;
 
-our $VERSION = '0.18';
 
 my $regchars = "\\^.\$|()[]{}*+?~!%^&/";
 

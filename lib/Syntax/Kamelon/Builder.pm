@@ -1,7 +1,7 @@
 package Syntax::Kamelon::Builder;
+use Alt::Syntax::Kamelon::RT129134;
 
 use 5.006;
-our $VERSION = '0.15';
 
 use strict;
 use Carp qw(cluck);

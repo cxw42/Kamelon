@@ -1,4 +1,5 @@
 package Syntax::Kamelon::Wx::PluggableTextCtrl::Highlighter;
+use Alt::Syntax::Kamelon::RT129134;
 
 use strict;
 use warnings;
