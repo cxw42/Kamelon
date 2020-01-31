@@ -97,7 +97,7 @@ foreach my $ln (@langl) {
 	Format($k, $outfile);
 	my $avertime = $totaltime/$cycles;
 	my $throughput = $size/$avertime;
-	
+
 	#composing message string
 	my $message = $ln;
 	if ($num < 10) {

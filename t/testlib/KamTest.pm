@@ -1,5 +1,7 @@
 package KamTest;
 
+use Test::More;
+
 use strict;
 use warnings;
 
@@ -38,9 +40,16 @@ sub ClearTimer {
 	$timed = 0;
 }
 
+use Test::Differences;
+
 sub CompareFile {
 	my $file = shift;
+    diag "CompareFile: Reading $reffolder/$file";
 	my $refdata = LoadFile("$reffolder/$file");
+
+    #unified_diff;   # XXX
+    #eq_or_diff $refdata, $output;
+
 	if ($refdata eq $output) {
 		return 1
 	}
@@ -53,6 +62,7 @@ sub Format {
 	unless (open(OFILE, ">", "$outfolder/$file")) {
 		die "Cannot open output $file"
 	}
+    diag "Format: Writing $outfolder/$file";
 	push @cleanup, $file;
 	Out($pretext);
 	Out($kam->Format);
