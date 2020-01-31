@@ -1,0 +1,6 @@
+# t/.gitignore: gitignore files generated during testing
+CLEANUP
+**/output/*.html
+Codefolding/output/codefolding.txt
+Format-ANSI/output/*.ansi
+KamTest/output/output.txt

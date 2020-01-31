@@ -8,7 +8,7 @@ Build
 Build.bat
 .last_cover_stats
 /Makefile
-/Makefile.old
+Makefile.old
 /MANIFEST.bak
 /META.yml
 /META.json
@@ -18,3 +18,19 @@ nytprof.out
 *.o
 *.bs
 /_eumm/
+
+# Common editor backup files
+*.swp
+*~
+~*
+
+# Files generated during the build process
+Kamelon/Kamelon.c
+Kamelon/MYMETA.json
+Kamelon/MYMETA.yml
+Kamelon/Makefile
+Kamelon/pm_to_blib
+
+# Generated dist tarballs
+/Syntax-Kamelon*.tar.gz
+/Syntax-Kamelon*.tgz
