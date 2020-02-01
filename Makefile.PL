@@ -10,13 +10,15 @@ If you want to use these scripts, please install it.
 __EOF
 
 my $alt = $ENV{PERL_ALT_INSTALL} || '';
+my $destdir = ($alt ? $alt eq 'OVERWRITE' ? '' : $alt : 'no-install-alt');
+print "Installation dir: '$destdir'\n";
 
 my $pmfile = #'Kamelon/lib/Syntax/Kamelon.pm';
     'lib/Alt/Syntax/Kamelon/RT129134.pm';
 
 use ExtUtils::MakeMaker;
 WriteMakefile(
-   DESTDIR           => ($alt ? $alt eq 'OVERWRITE' ? '' : $alt : 'no-install-alt'),
+   ( DESTDIR         => $destdir )x!! $destdir,
    NAME              => 'Alt::Syntax::Kamelon::RT129134',
    VERSION           => '0.000001',     # Shouldn't satisfy any dependencies
    LICENSE           => 'gpl_3',
@@ -35,7 +37,7 @@ WriteMakefile(
           resources => {
               repository => {
                  type => 'git',
-		 url  => 'git://github.com/haje61/Kamelon.git',
+                 url  => 'git://github.com/haje61/Kamelon.git',
                  web  => 'https://github.com/haje61/Kamelon',
               },
           },

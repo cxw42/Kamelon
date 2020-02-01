@@ -36,3 +36,10 @@ Kamelon/pm_to_blib
 /Syntax-Kamelon*.tgz
 /Alt-Syntax-Kamelon*.tar.gz
 /Alt-Syntax-Kamelon*.tgz
+
+# Build directories
+/Syntax-Kamelon*/
+/Alt-Syntax-Kamelon*/
+
+# alt install dir
+/no-install-alt/

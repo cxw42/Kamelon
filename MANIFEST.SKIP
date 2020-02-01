@@ -15,6 +15,11 @@ t/.*\.out$
 ^Alt-Syntax-Kamelon.*\.tar\.gz$
 ^Alt-Syntax-Kamelon.*\.tgz$
 
+# Build dirs and alt install dir
+^Syntax-Kamelon.*\/.*
+^Alt-Syntax-Kamelon.*\/.*
+^no-install-alt\/
+
 # t/.gitignore
 ^t\/.*\/CLEANUP$
 ^t\/.*\/output\/.*\.html$
